@@ -49,7 +49,7 @@ const rules = (index, state) => {
   return newState(index, index - 1, index + 1, state);
 }
 
-const iterateCells = (state) => {
+export const iterateCells = (state) => {
 	const newState = [];
   for (let i = 0; i < state.length; i++) {
   	const newCell = rules(i, state);
